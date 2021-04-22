@@ -1,14 +1,15 @@
 export class Person {
   id?: number;
-  firstName: string;
-  age: number;
-  job: string;
+  name: string;
+  number: number;
+  model: string;
+  // name: any;
 
-  constructor(id: number = null, firstName: string = '', age: number = 0, job: string = '') {
+  constructor(id: number = null, name: string = '', number: number = 0, model: string = '') {
     this.id = id;
-    this.firstName = firstName;
-    this.age = age;
-    this.job = job;
+    this.name = name;
+    this.number = number;
+    this.model = model;
   }
 }
 

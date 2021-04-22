@@ -16,8 +16,8 @@ export class PersonFormDialogComponent implements OnInit {
     this.formInstance = new FormGroup({
       "id":  new FormControl('', Validators.required),
       "firstName": new FormControl('', Validators.required),
-      "age": new FormControl('', Validators.required),
-      "job": new FormControl('', Validators.required),
+      "number": new FormControl('', Validators.required),
+      "model": new FormControl('', Validators.required),
     });
 
     this.formInstance.setValue(data);

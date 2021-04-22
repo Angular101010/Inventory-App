@@ -14,8 +14,6 @@ import { ConfirmationDialogComponent } from './components/confirmation-dialog/co
 import { MatDialogModule } from '@angular/material/dialog';
 import { PersonFormDialogComponent } from './components/person-form-dialog/person-form-dialog.component';
 import { ReactiveFormsModule } from '@angular/forms';
-
-
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { AppRoutingModule } from './app-routing.module';

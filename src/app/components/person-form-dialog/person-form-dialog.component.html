@@ -3,28 +3,28 @@
   <form [formGroup]="formInstance">
     <div>
       <mat-form-field class="fullWidth" appearance="outline">
-        <mat-label>First Name *</mat-label>
-        <input matInput type="text" name="firstName" formControlName="firstName">
-        <mat-error *ngIf="formInstance.controls['firstName']?.errors?.required">field required</mat-error>
+        <mat-label>Name *</mat-label>
+        <input matInput type="text" name="firstName" formControlName="Name">
+        <mat-error *ngIf="formInstance.controls['Name']?.errors?.required">field required</mat-error>
       </mat-form-field>
     </div>
     <div class="mt-5">
       <mat-form-field class="fullWidth" appearance="outline">
-        <mat-label>Age *</mat-label>
-        <input matInput type="number" name="age" formControlName="age" />
-        <mat-error *ngIf="formInstance.controls['age']?.errors?.required">field required</mat-error>
+        <mat-label>Number *</mat-label>
+        <input matInput type="number" name="number" formControlName="number" />
+        <mat-error *ngIf="formInstance.controls['number']?.errors?.required">field required</mat-error>
       </mat-form-field>
     </div>
     <div class="mt-5">
       <mat-form-field class="fullWidth" appearance="outline">
-        <mat-label>Job *</mat-label>
-        <mat-select name="job" formControlName="job">
-          <mat-option value="Software Developer">Software Developer</mat-option>
-          <mat-option value="Physician">Physician</mat-option>
-          <mat-option value="Dentist">Dentist</mat-option>
-          <mat-option value="Nurse">Nurse</mat-option>
+        <mat-label>Model *</mat-label>
+        <mat-select name="Model" formControlName="Model">
+          <mat-option value="Dell 7020">Dell 7020</mat-option>
+          <mat-option value="Dell 9010">Dell 9010</mat-option>
+          <mat-option value="Dell 9020">Dell 9020</mat-option>
+          <mat-option value="Dell 7020">Dell 7020</mat-option>
         </mat-select>
-        <mat-error *ngIf="formInstance.controls['job']?.errors?.required">field required</mat-error>
+        <mat-error *ngIf="formInstance.controls['model']?.errors?.required">field required</mat-error>
       </mat-form-field>
     </div>
   </form>
