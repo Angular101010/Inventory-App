@@ -14,10 +14,12 @@ export class PersonFormDialogComponent implements OnInit {
   constructor(public dialogRef: MatDialogRef<PersonFormDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: Person) {
     this.formInstance = new FormGroup({
-      "id":  new FormControl('', Validators.required),
-      "firstName": new FormControl('', Validators.required),
+      "id": new FormControl('', Validators.required),
+      "name": new FormControl('', Validators.required),
       "number": new FormControl('', Validators.required),
       "model": new FormControl('', Validators.required),
+      "cpu": new FormControl('', Validators.required),
+      "ram": new FormControl('', Validators.required),
     });
 
     this.formInstance.setValue(data);

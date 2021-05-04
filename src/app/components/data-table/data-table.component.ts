@@ -20,7 +20,7 @@ export class DataTableComponent implements OnInit, OnDestroy, AfterViewInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 
-  public displayedColumns: string[] = ['name', 'number', 'model'];
+  public displayedColumns: string[] = ['name', 'number', 'model', 'cpu', 'ram'];
   public columnsToDisplay: string[] = [...this.displayedColumns, 'actions'];
 
   /**

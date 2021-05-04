@@ -29,6 +29,8 @@ export class PersonService {
     findElem.name = person.name;
     findElem.number = person.number;
     findElem.model = person.model;
+    findElem.cpu = person.cpu;
+    findElem.ram = person.ram;
 
     this.persons$.next(this.persons);
   }

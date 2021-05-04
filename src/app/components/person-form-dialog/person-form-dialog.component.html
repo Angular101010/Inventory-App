@@ -4,10 +4,17 @@
     <div>
       <mat-form-field class="fullWidth" appearance="outline">
         <mat-label>Name *</mat-label>
-        <input matInput type="text" name="firstName" formControlName="Name">
+        <input matInput type="text" name="name" formControlName="name">
         <mat-error *ngIf="formInstance.controls['Name']?.errors?.required">field required</mat-error>
       </mat-form-field>
     </div>
+    <div class="mt-5">
+      <mat-form-field class="fullWidth" appearance="outline">
+        <mat-label>Cpu *</mat-label>
+        <input matInput type="string" name="cpu" formControlName="cpu" />
+        <mat-error *ngIf="formInstance.controls['cpu']?.errors?.required">field required</mat-error>
+      </mat-form-field>
+    </div> 
     <div class="mt-5">
       <mat-form-field class="fullWidth" appearance="outline">
         <mat-label>Number *</mat-label>
@@ -17,8 +24,15 @@
     </div>
     <div class="mt-5">
       <mat-form-field class="fullWidth" appearance="outline">
+        <mat-label>Ram *</mat-label>
+        <input matInput type="string" name="ram" formControlName="ram" />
+        <mat-error *ngIf="formInstance.controls['ram']?.errors?.required">field required</mat-error>
+      </mat-form-field>
+    </div> 
+    <div class="mt-5">
+      <mat-form-field class="fullWidth" appearance="outline">
         <mat-label>Model *</mat-label>
-        <mat-select name="Model" formControlName="Model">
+        <mat-select name="model" formControlName="model">
           <mat-option value="Dell 7020">Dell 7020</mat-option>
           <mat-option value="Dell 9010">Dell 9010</mat-option>
           <mat-option value="Dell 9020">Dell 9020</mat-option>
